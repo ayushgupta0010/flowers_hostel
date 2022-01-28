@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Flower's Hostel",
+    "slug": "flowers_hostel",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/logo.png",
+    "splash": {
+      "image": "./app/assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Allow $(PRODUCT_NAME) to access your photos",
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access your camera",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundImage": "./app/assets/logo.png",
+        "backgroundColor": "#171717"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.flowers_hostel"
+    },
+    "web": {
+      "favicon": "./app/assets/logo.png"
+    },
+    "description": "",
+    "plugins": ["expo-image-picker"]
+  }
+}
